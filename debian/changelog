@@ -1,0 +1,32 @@
+ruby-faye (1.4.0-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database,
+    Bug-Submit, Repository, Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Utkarsh Gupta ]
+  * New upstream version 1.4.0
+    - Address em-http-request warnings about `verify_peer`.
+      (Fixes: CVE-2020-15134) (Closes: #967063)
+    - Strict meta channel recognition in server.
+      (Fixes: CVE-2020-11020) (Closes: #959392)
+  * Tighten dependency on ruby-{faye-websocket, em-http-request}
+  * Add patch to relax em-http-request dependency
+  * Fix package wrt cme
+  * Use @d.o address
+  * Drop unnecessary dependency on ruby interpreter
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Sat, 02 Jan 2021 18:18:03 +0530
+
+ruby-faye (1.2.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #921053)
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Fri, 01 Feb 2019 19:09:02 +0530

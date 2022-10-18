@@ -1,0 +1,39 @@
+Source: ruby-faye
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Utkarsh Gupta <utkarsh@debian.org>
+Section: ruby
+Testsuite: autopkgtest-pkg-ruby
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-cookiejar,
+               ruby-em-http-request (>= 1.1.5),
+               ruby-eventmachine,
+               ruby-faye-websocket (>= 0.11.0),
+               ruby-multi-json,
+               ruby-rack,
+               ruby-websocket-driver
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-faye
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-faye.git
+Homepage: https://faye.jcoglan.com
+Rules-Requires-Root: no
+XS-Ruby-Versions: all
+
+Package: ruby-faye
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby-cookiejar,
+         ruby-em-http-request (>= 1.1.5),
+         ruby-eventmachine,
+         ruby-faye-websocket (>= 0.11.0),
+         ruby-multi-json,
+         ruby-rack,
+         ruby-websocket-driver,
+         ${misc:Depends}
+Description: Simple pub/sub messaging for the web
+ Faye is a set of tools for simple publish-subscribe messaging between web
+ clients.
+ .
+ It ships with easy-to-use message routing servers for Node.js and Rack
+ applications, and clients that can be used on the server and in the browser.
